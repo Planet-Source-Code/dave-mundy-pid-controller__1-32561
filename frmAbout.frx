@@ -1,0 +1,22 @@
+ÿ©Proportional Integral Derivative (PID) Controller.
+
+A PID controller is a closed loop control system that is used to control systems that include feedback.
+
+some examples that may include a PID loop:
+
+	temperature control (such as a thermostat)
+	position control
+	speed control 
+
+The PID loop has a set point, from which the feedback is subtracted.  Which equals the error.
+The time derivative of the error and the integral of the error with respect to time are taken.  These two quantities in addition to a proportional component of the error are added together to give the amount of power needed to move the system.
+
+This demo has a mass and a set point.  When the PID controller is activated the mass will follow the set position as closely as it can.  Remember that the mass has inertia, and is why its speed cannot be changed instantaneously.  
+
+For a PID loop to work well, the gains for the proportional, derivative, and the integral terms must be "tuned" this tuning is dependent on the mass, and the type of application along with many other factors.  There are formal "tuning" methods, but with this demo, it is best to just play with the different gains.
+
+After you have "played" around with the different waveforms, or adjusted the gains, you can plot the positions by clicking the "show graph" button.  
+
+This Demo Program includes a class that allows a PID controller to easily be added to a program.  
+
+Have Fun
